@@ -1,0 +1,18 @@
+ul{
+    list-style-type: square;
+
+    /*podendo também utilizar imagens como tipo:*/
+    /*list-style-image: url("../imagens/lista.png")*/
+
+    /*caso eu queira que essa imagem fique dentro da lista:*/
+    /*list-style-position: inside*/
+    /*podendo ser feito também com os números ou marcações colocando em baixo do list style type de cima*/
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+li{
+    border: 1px solid;
+}

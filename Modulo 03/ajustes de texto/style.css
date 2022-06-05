@@ -1,0 +1,37 @@
+p{
+    color: red;
+
+    /*padrão do texto é o left*/
+    /*alinhar o texto: 
+    text-align: center;*/
+
+    /*justificar o texto*/
+    text-align: justify;
+
+    /*uppercase para deixar tudo maiusculo, lowercase para deixar minusculo e capitalize para deixar a primeira letra de cada palavra como maiusculo*/
+    text-transform: capitalize;
+
+    /*para identação(parágrafo)*/
+    text-indent: 35px;
+
+    /*decoration (riscar, grifar etc)*/
+    /*sublinhar= underline, overline=risco em cima do texto, line-through: riscar o texto, podendo também juntar os tipos como no exemplo:*/
+    /*caso eu deixe: text-decoration: none ele limpa todas as decorações padrões, como por exemplo o sublinhado do link*/
+    text-decoration: underline overline line-through;
+
+    /*espaço entre as letras, por padrão=0, podendo também receber valores negativos, nesse caso uma letra ficaria em cima da outra*/
+    letter-spacing: 1.2px;
+
+    /*altura da linha (px, %, etc), números e %: que servirá como multiplicador do tamanho da fonte*/
+    line-height: 3;
+
+    /*distância entre uma palavra e outra*/
+    word-spacing: 5px;
+
+    /*sombra, ele recebe 3 valores de deslocamento, nessa ordem: direita, baixo, raio, cor*/
+    text-shadow: 1px 1px #bbb;
+
+
+
+
+}

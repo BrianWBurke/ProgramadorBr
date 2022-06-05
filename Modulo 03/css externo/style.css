@@ -1,0 +1,201 @@
+body{
+    background-image: url(./background/japan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: justify;
+    }
+
+
+/*alterar cor de todos os parágrafos
+p{
+    color: red;
+}*/
+
+
+/*alterar cor baseado no id / para o background n se repitir e ficar do tamanho da tela*/
+#paragrafos{
+    background-image: url(./background/tile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+#titulo{
+    color:blue;
+    background-color: #ffff00;
+}
+
+/*alterar cor baseado no class*/
+.texto_verde{
+    color:green;
+    background-image: url(./background/fundo.jpg);
+}
+
+/*alterar cor baseado no id mas com color value (rgb para mais claro ou escuro, todos os valores de 0 à 255)*/
+/*r (red) g (green) b (blue)*/
+#sub_titulo{
+    color:rgb(0,100,255)
+}
+
+/*alterar cor baseado no id mas com color value (rgba adicional de opacuo de 0 para transparente e 1 para opacuo)*/
+#opaco{
+    color:rgba(0,0,255,0.6)
+}
+
+/*alterar cor baseado no id mas com color value (do mais claro ao escuro, todos os valores de 0 à 255 porem em hexadecimal)*/
+/*r (red) g (green) b (blue)* (mesma sequencia do rgb)*/
+#hexadecimal{
+    color:#ffff00
+}
+
+/*medidas (unidades fixas ou absolutas)*/
+/*centimetros*/
+#cm{
+    background-color: blue;
+    width:1cm ;
+	height:1cm ;
+}
+
+/*milimetros*/
+#mm{
+    background-color: red;
+    width:5mm ;
+	height:5mm ;
+}
+
+/*polegadas*/
+#in{
+    background-color: yellow;
+    width:1in ;
+	height:1in ;
+}
+
+/*pixel*/
+#px{
+    background-color: green;
+    width:10px ;
+	height:10px ;
+}
+
+/*ponto*/
+#pt{
+    background-color: cyan;
+    width:10pt ;
+	height:10pt ;
+}
+
+/*picas (equivalente a 12 pontos)*/
+#pc{
+    background-color: chocolate;
+    width:1pc ;
+	height:1pc ;
+}
+
+/* medidas relativas*/
+
+/*para html(padrão):
+font-side: 20px*/
+
+.container{
+    font-size: 20px;
+}
+
+/*o em faz referencia ao elemento que ele está dentro, no caso do container*/
+.inside{
+    font-size: 1em;
+}
+
+/*o rem faz referencia ao elemento raiz, que nesse caso é o elemento html*/
+/*
+.inside{
+    font-size: 1rm;
+}
+*/
+
+/*vw faz referencia ao tamanho da janela*/
+.container2{
+    width: 50vw;
+    background: red;
+}
+
+
+.inside2{
+    width:  100px;
+    background: blue;
+}
+
+/*vh faz referencia ao tamanho da janela, porem em altura*/
+.container3{
+    width: 50vh;
+    background: red;
+}
+
+
+.inside3{
+    width:  100px;
+    background: blue;
+}
+
+/*vmin faz referencia ao tamanho da janela, porem faz referencia a menor dimensão*/
+.container4{
+    width: 50vmin;
+    background: red;
+}
+
+
+.inside4{
+    width:  100px;
+    background: blue;
+}
+
+/*vmax faz referencia ao tamanho da janela, porem faz referencia a maior dimensão*/
+.container5{
+    width: 50vmax;
+    background: red;
+}
+
+/*utilizando o % será sempre o tamanho relativo do tamanho pai, sempre que o elemento pai alterar tamanho esse o aocmpanha */
+.inside5{
+    width:  100%;
+    background: blue;
+}
+
+
+/*margem (do elemento para fora) e padding (do elemento para dentro)*/
+#base{
+    height: 10px;
+    background-color: red;
+}
+
+#container6{
+    background-color: blue;
+    color: azure;
+    margin-top:  10px;
+    margin-left: 10px;
+    /*para todos os lados ao mesmo tempo: margin: 10px*/
+    padding: 10px
+    /*para o padding podemos utilizar direções tbm: padding-top, padding-left, etc...*/
+}
+
+/*borda*/
+.borda{
+    border-width: 5px;
+    border-style: solid;
+    border-top-color: aqua;
+    /*para mudar a cor da borda inteira é border-color: cor*/
+    /*para criar uma borda colorida: border-color: red green blue yellow (irá alterar nessa sequencia ^ > V <), 
+    essa sequencia também funciona para criar bordas com espessuras diferentes na tag acima*/
+    border-radius: 5px;
+    /*existe tbm uma maneira mais facil de criar borda, porém precisa ser na sequencia seguinte:
+    ex: border: 5px(tamanho) dashed(estilo) blue(cor)*/
+}
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+
+
+

@@ -1,0 +1,33 @@
+a{
+    text-decoration: none;
+    color: #bc2035;
+    cursor: alias;
+    /*background: #bc2035;*/
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid #bc2035
+}
+
+/*observações: todos os links tem estagios: quando ele foi visitado (como padrão fica roxo) e quando não foi visitado(como padrão fica azul)*/
+
+a:visited{
+    color: red;
+}
+
+/*hover:quando o mouse está em cima*/
+a:hover{
+
+    background: #bc2035;
+    color: white;
+
+}
+
+/*quando clica*/
+a:active{
+
+    background: cyan;
+    color: blue;
+
+}

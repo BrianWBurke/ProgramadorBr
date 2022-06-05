@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+
+.card{
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 1px 20px;
+    background: url('../assents/background.png') no-repeat ;
+    background-size: cover;
+    margin: auto;
+    margin-top: 15%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+.instagram{
+    
+    
+    list-style-image: url('../assents/Insta.png');
+    
+}
+
+.twitter{
+    list-style-image: url('../assents/Twitter.png')
+}
+
+.youtube{
+    list-style-image: url('../assents/Youtube.png')
+}

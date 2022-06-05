@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Alinhamento horizontal</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+        body {
+            font-size: 1.2rem;
+        }
+
+        #quadrado{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+
+            /*para funcionar o elemento precisa ser display block*/
+            /*para alinhar no centro da tela*/
+            margin: auto;
+
+            /*para manter alinhado a direita*/
+        }
+
+        #quadrado2{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+
+            /*para manter alinhado a direita*/
+            margin-left: auto;
+
+            
+        }
+
+        /*para alterar posição de ima imagem, primeira maneira*/
+        /*img{
+            display: block;
+            margin: auto;
+        }*/
+
+        
+        /*segunda maneira, porém ela irá precisar estar dentro de outro elemento*/
+        #container{
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="quadrado">
+
+    </div>
+
+    <div id="quadrado2">
+
+    </div>
+
+    <div id="container">
+    <img src="./assents/pc1.jpg" alt="pc">
+    </div>
+
+    
+
+</body>
+
+
+</html>

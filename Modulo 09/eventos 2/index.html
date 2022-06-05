@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Minha primeira página</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+    function onOver(elemento){
+        elemento.style.backgroundColor = "red";
+    }
+
+    function onOut(elemento){
+        elemento.style.backgroundColor = "cornflowerblue";
+    }
+</script>
+
+<style>
+    img {
+        width: 200px ;
+        margin-bottom: 25px;
+        }
+
+        div{
+            display: inline;
+            padding: 10px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: aliceblue
+        }
+</style>
+
+    
+    
+
+</head>
+
+
+<!-- onload é um evento que será executado toda vez que a página for carregada -->
+<body onload="console.log('Página completamente carregada')">
+
+    <img src="./2015-04-30-snes.webp">
+    <br>
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+        
+</body>
+
+
+</html>

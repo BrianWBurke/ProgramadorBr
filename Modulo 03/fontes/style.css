@@ -1,0 +1,21 @@
+P {
+    /*mudar a fonte, caso colocar uma fonte que não existe ele irá carregar automaticamente a fonte padrão*/
+    /*caso o nome da fonte tiver mais de uma palavra é necessário o uso das aspas, exemplo: "times new roman" no lugar de arial*/
+    /*podemos adicionar mais de uma, que no caso irá rodar a primeira que existir, exemplo: programadorbr, arial, logitic-> elá irá rodar arial*/
+    font-family: arial;
+
+    /*estilo da fonte*/
+    /*para voltar ao padrão é só colocar: font-style: normal;*/
+    font-style: italic;
+
+    /*tamanho da fonte*/
+    font-size: 22px;
+
+    /*fonte em negrito= font-weight: bold;*/
+    /*podem colocar um número de 100 à 900, pulando de 100 em 100, onde 400 é a fonte normal, 700 é a fonte bold*/
+    font-weight: 900;
+
+    /*para deixar a fonte em maiusculo, porém respeitando o que já existe em maiusculo no texto*/
+    font-variant: small-caps;
+
+}

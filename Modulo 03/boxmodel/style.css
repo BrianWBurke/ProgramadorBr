@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: red;
+    /*nesse caso como o content se sobresai sobre o container (com relação a cor) podemos utilizar o padding para criar
+    uma sobreposição parecida com borda*/
+    padding: 5px;
+    border: 5px solid blue;
+    margin: 10px;
+}
+
+.content {
+    background-color: #ddd;
+    border: 5px solid green;
+    padding: 5px;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 10px solid blue;
+    /*a borda acaba aumentando o tamanho do item, nesse exemplo temos um quadrado de 100px e mais uma borda de 10px,
+    totalizando um quadrado (incluindo borda) de 120px e isso temos que levar em consideração no design, isso também é incluso
+    para padding e etc*/
+}
+
+/*comparando os tamanhos com e sem borda para um quadrado de mesmo tamanho*/
+.square2{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+   }
+
+   /*porém existe uma propriedade para o quadrado obedecer o tamanho*/
+   .square3{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 10px solid blue;
+        padding: 10px;
+
+        box-sizing: border-box;
+   }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Minha primeira página</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            overflow: hidden;
+            margin: auto;
+            width: 80%;
+            background: #5c57a4;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .menu{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        li{
+            /* display:inline-block */
+            float: left;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .logo{
+            float: left;
+            display: inline-block;
+            color: white;
+        }
+
+        /* se houver qualquer valor no maximo ou minimo definido ele irá executar esse css */
+
+        /* nesse caso a ordem importa, colocando o de 800px primeiro para n~]ao ter conflito nas cores */
+        /* se fosse min-width a media de baixo precisaria estar embaixo da de 600px */
+        @media screen and (max-width: 800px) {
+
+            .header{
+            background: gray;
+            }
+            
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .header{
+                background: red;
+            }
+
+            .logo{
+                float: none;
+                display: block;
+                text-align: center;
+
+            }
+
+            .menu{
+                margin-top: 20px;
+                float: none;
+                text-align: center;
+            }
+
+            li{
+                float: none;
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+            
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            Logo
+        </div>
+
+        <ul class="menu">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Contatos</li>
+            <li>Escritórios</li>
+        </ul>
+
+    </div>
+
+
+
+</body>
+
+
+</html>

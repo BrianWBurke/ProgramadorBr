@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Minha primeira página</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body {
+            font-size: 1.2rem;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- caso não queira que as informações apareçam colocar method POST, exemplo para senhas (password) -->
+    <form method="GET" action="https://www.youtube.com/results">
+
+        Pesquise seu vídeo no youtube:
+        <input type="text" name="search_query"><br>
+        <input type="password" name="senha"><br> <!--para esse caso usa o method POST-->
+        <input type="checkbox" name="cursos" value="op1"> React Native<br> <!--no checkbox podemos selecionar mais de uma opção-->
+        <input type="checkbox" name="cursos" value="op2"> React Js<br>
+
+        <input type="radio" name="gender" value="m" >Masc<br> <!--somente selecionar uma opção, porem se eles tivessem name diferente poderia selecionar mais de um-->
+        <input type="radio" name="gender" value="f"checked>Fem<br> <!--o checked serve para deixar selecionado a opção automaticamente-->
+
+
+
+
+
+        <input type="reset" value="Limpar"> <!--serve para voltar ao padrão do formulario-->
+        <input type="submit" value="Enviar"> <!--botão para executar-->
+
+
+
+    </form>
+
+</body>
+
+
+</html>

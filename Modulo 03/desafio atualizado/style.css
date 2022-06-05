@@ -1,0 +1,59 @@
+html{
+    background-color: black;
+    }
+
+
+#nome{
+    font-size: 15px; 
+    border: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-weight: 100;    
+    }
+
+    a{
+        text-decoration: none;
+        color: black           
+    }
+
+    a:hover{
+        color: red;
+    }
+
+#l1
+{    
+    list-style-image: url(./image/Insta.png);    
+    cursor: pointer;                
+}
+
+
+#l2
+{
+    list-style-image: url(./image/Twitter.png);    
+}
+
+
+#l3
+{   
+    list-style-image: url(./image/Youtube.png);       
+}
+
+
+body{
+    background-image: url(./image/background.png);
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-indent: 15px;
+    padding: 15px;
+    margin: 15px;    
+    }
+
+
+ul{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;  
+    text-align: justify;  
+        
+  }
+

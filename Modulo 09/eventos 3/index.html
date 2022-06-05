@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Minha primeira página</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+    function loaded() {
+        let t = document.getElementById("titulo")
+
+        // t.onclick = mudarText;
+        t.addEventListener("mouseover", mudarText);
+        t.addEventListener("mouseout", mouseout);
+    }
+
+    function mudarText() {
+        this.innerHTML = "Mouse dentro do elemento";
+    }
+
+    function mouseout() {
+        this.innerHTML = "Mouse fora do elemento";
+    }
+</script>
+
+<style>
+    
+</style>
+
+    
+    
+
+</head>
+
+
+
+<body onload="loaded()">
+
+    <h1 id="titulo">Passe o mouse aqui</h1>
+        
+</body>
+
+
+</html>

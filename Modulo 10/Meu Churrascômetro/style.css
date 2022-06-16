@@ -1,0 +1,24 @@
+body {
+    background-image: url('images/lenha.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;  
+}
+
+div {
+    border: solid;
+
+    position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+    padding: 10px;  
+    border-radius: 10px;
+    background-color: rgba(148, 196, 238, 0.5);    
+}
+
+input {
+    padding: 5px;
+}
+    

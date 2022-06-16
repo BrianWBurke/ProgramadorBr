@@ -23,14 +23,28 @@ function calc() {
         resultCerveja = (cerveja * adultos) / 2;
         resultBebidas = (bebida * adultos) * (crianca / 2) / 2;
     }
-
-    
 }
 
-function calcular(){
-let c = this.calc();
+function verificar() {
+    let calcu = calc;
 
-let p = document.querySelector('p#paragrafo');
+    if (this.adultos == '' && this.crianca == '' && this.duracao == '') {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-p.innerHTML = `${resultCarne} KG de carne &#x1F969 <br>${resultCerveja} garrafas de cerveja &#x1F37A <br>${resultBebidas} Garrafas de 2L de bebidas &#x1F964 <br>`;
+
+function calcular() {
+    let r = this.verificar();
+    let c = this.calc();
+
+    if (r = true) {
+        alert('Favor verificar se as caixas estão devidamente preenchidas.');
+    } else {
+        let p = document.querySelector('p#paragrafo');
+
+        p.innerHTML = `${resultCarne} KG de carne &#x1F969 <br>${resultCerveja} garrafas de cerveja &#x1F37A <br>${resultBebidas} Garrafas de 2L de bebidas &#x1F964 <br>`;
+    }
 }

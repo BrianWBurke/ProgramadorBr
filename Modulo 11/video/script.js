@@ -4,25 +4,29 @@ let video = document.getElementById('video1');
 // let container = document.getElementsByClassName('container');
 
 
+function ocultar() {
+    let controle = document.getElementsByClassName('controle').display;
+    controle = 'inline';
+}
+
 // container.addEventListener('mouseout', function(){
 //     let controle = document.getElementsByClassName('controle');
-//     if(controle.style.display === 'none') {
-//         controle.style.display = 'inline';
+//     if(controle.display === 'none') {
+//         controle.display = 'inline';
 //     } else {
-//         controle.style.display = 'none';
+//         controle.display = 'none';
 //     }
 // });
 
 
-function ocultar() {
-    let img = document.getElementsByClassName('controle');
-    if (img.display === 'inline'){
-        img.display = 'none';
-    } else {
-        img.display = 'inline';
-    }
-    
-}
+// function ocultar() {
+//     let img = document.getElementsByClassName('controle');
+//     if (img.visibility === 'hidden'){
+//         img.visibility = 'visible';        
+//     } else { 
+//         img.visibility = 'hidden';
+//     }
+// }
 
 function retroceder() {
     video.currentTime -= 15;

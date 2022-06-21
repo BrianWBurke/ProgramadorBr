@@ -21,7 +21,7 @@ function calcular() {
     resultado.innerHTML = `<p>${qdtTotalCarne / 1000} Kg de Carne &#x1F969</p>`
     resultado.innerHTML += `<p>${Math.ceil(qdtTotalCerveja / 355)} Latas (355ml cada) de Cerveja &#x1F37A</p>`
     resultado.innerHTML += `<p>${Math.ceil(qdtTotalBebidas / 2000)} Garrafas (2L) de Bebida &#x1F964</p>`
-}
+    }
 }
 
 function carnePP(duracao) {    

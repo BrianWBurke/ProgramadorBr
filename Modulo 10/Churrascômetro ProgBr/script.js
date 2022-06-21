@@ -1,36 +1,41 @@
-let resultCarne = 0;
-let resultCerveja = 0;
-let resultBebidas = 0;
+let inputAdultos = document.getElementById('adultos');
+let inputCriancas = document.getElementById('criancas');
+let inputDuracao = document.getElementById('duracao');
 
-function calc() {
-    let adultos = Number(document.querySelector('input#adultos').value);
-    let crianca = Number(document.querySelector('input#criancas').value);
-    let duracao = Number(document.querySelector('input#duracao').value);
-    let carne = 0.4;
-    let cerveja = 1.2;
-    let bebida = 1;
+let resultado = document.getElementById('resultado');
 
-    if (duracao > 6) {
-        carne = 0.65;
-        cerveja = 2;
-        bebida = 1.5;
+function calcular() {
+    let adultos = inputAdultos.value;
+    let criancas = inputCriancas.value;
+    let duracao = inputDuracao.value;
 
-        resultCarne = carne * adultos * (crianca / 2);
-        resultCerveja = (cerveja * adultos) / 2;
-        resultBebidas = (bebida * adultos) * (crianca / 2) / 2;
-    } else {
-        resultCarne = carne * adultos * (crianca / 2);
-        resultCerveja = (cerveja * adultos) / 2;
-        resultBebidas = (bebida * adultos) * (crianca / 2) / 2;
-    }
+    let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
+    let qdtTotalCerveja = cervejaPP(duracao) * adultos;
+    let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
 
-    
+
+    resultado.innerHTML = `<p>${qdtTotalCarne / 1000} Kg de Carne &#x1F969</p>`
+    resultado.innerHTML += `<p>${Math.ceil(qdtTotalCerveja / 355)} Latas (355ml cada) de Cerveja &#x1F37A</p>`
+    resultado.innerHTML += `<p>${Math.ceil(qdtTotalBebidas / 2000)} Garrafas (2L) de Bebida &#x1F964</p>`
 }
 
-function calcular(){
-let c = this.calc();
+function carnePP(duracao) {    
+    if(duracao >= 6) {
+        return 650;
+    }
+    return 400;
+}
 
-let p = document.querySelector('p#paragrafo');
+function cervejaPP(duracao) {    
+    if(duracao >= 6) {
+        return 2000;
+    }
+    return 1200;
+}
 
-p.innerHTML = `${resultCarne} KG de carne &#x1F969 <br>${resultCerveja} garrafas de cerveja &#x1F37A <br>${resultBebidas} Garrafas de 2L de bebidas &#x1F964 <br>`;
+function bebidasPP(duracao) {    
+    if(duracao >= 6) {
+        return 1500;
+    }
+    return 1000;
 }

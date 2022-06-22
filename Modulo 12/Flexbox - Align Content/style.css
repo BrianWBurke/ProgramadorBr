@@ -1,10 +1,8 @@
 .container {    
     display: flex;    
-    /* justify-content: flex-start (padrão) | flex-end | center | space-between | space-around | space-evenly | start | end | left
-
-    align-items: stretch (padrão) | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end */
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
     
 
     background-color: darkgray;
@@ -25,6 +23,6 @@
 }
 
 .rect {
-    width: 100px;
+    width: 150px;
     height: 100px;
 }

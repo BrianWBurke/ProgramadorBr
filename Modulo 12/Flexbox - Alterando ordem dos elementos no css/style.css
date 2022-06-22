@@ -8,30 +8,24 @@
     color: #fff;
 }
 
+
+/* como padrão todos os itens tem order: 0; */
 .r1 {
-    flex-grow: 1;
+    order: 3;
     background-color: red;
 }
 
 .r2 {
-    flex-grow: 2;
+    order: 1;
     background-color: blue;
 }
 
 .r3 {
-    /* flex-shrink = propriedade que recebe 0 (não pode encolher) e 1 (pode encolher) */
-    /* flex-shrink: 0; */
-
-
-    /* flex-grow = propriedade que recebe 0 (não pode esticar) e 1 (pode esticar) */
-    /* colocando valores > 1 o box fica maior */
-    flex-grow: 3;
+    order: 2;
     background-color: green;
 }
 
-.rect {
-    
-    /* como todos estão com grow não precisamos mais do width */
-    /* width: 150px; */
-    height: 100px;
+.rect {   
+    width: 150px;
+    height: 150px;
 }

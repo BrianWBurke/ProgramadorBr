@@ -1,12 +1,9 @@
 .container {    
     display: flex;    
+    /* podemos simplificar essas duas linhas de baixo em somente uma:
     flex-direction: row;
-    /* protege o tamanho do elemento */
-    /* essa função irá manter sempre o tamanho dos quadrados, então caso não tenha espaço mais na linha ele irá mandar para linha de baixo, consequentemente pode vazar o elemento pai */
-    /* flex-wrap: wrap; */
-
-    /* da msm forma temos para inverter */
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; */
+    flex-flow: column wrap;
     
 
     background-color: darkgray;

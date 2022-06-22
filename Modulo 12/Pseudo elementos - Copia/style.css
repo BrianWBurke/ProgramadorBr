@@ -1,0 +1,48 @@
+/* pseudo elementos são caracterizados pelos dois pontos 2x(::) */
+
+/* primeira linha do parágrafo */
+p::first-line{
+color: red;
+}
+
+/* primeira letra */
+p::first-letter {
+    color: blue;
+    font-size: 5rem;
+}
+
+.li1 {
+    list-style: none;
+
+}
+
+/* conteúdo depois do elemento */
+.li1::after {
+    content: "A";
+    color: blueviolet;
+    font-size: 50px;
+}
+
+.li2 {
+    /* margin-left: 500px;     */
+    /* list-style-image: url(./assents/google.png); */
+    list-style: none;
+}
+
+/* conteúdo antes do elemento */
+.li2::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assents/google.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* quando seleciona o texto ele fica em tom amarelo e com o texto laranja */
+p::selection {
+    background-color: yellow;
+    color: orangered;
+}

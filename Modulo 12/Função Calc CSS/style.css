@@ -1,88 +1,39 @@
-/* pseudo classe utliza somente 1x dois pontos ":" */
-
-/* somente o input que estiver com foco (digitando) fica vermelho */
-input:focus {
-    color:red ;
-}
-
-
-
-/* somente o primeiro elemento li de todas as ul ficam azul, ele pega o primeiro child.
-Caso vc colocar qualquer outro elemento em primeiro lugar, como um p ou um h1 o primeiro li não fica mais azul*/
-/* li:first-child {
-    color:blue;
-} */
-
-
-
-/* primeiro do seu tipo, independente de tiver outro tipo antes */
-/* li:first-of-type {
-    color:blue;
-} */
-
-
-
-/* seleciona qual child */
-/* li:nth-child(2) {
-    color:blue;
-} */
-
-
-
-/* seleciona qual tipo */
-/* li:nth-of-type(2) {
-    color:blue;
-} */
-
-
-
-/* seleciona o child de trás para frente */
-/* li:nth-last-child(2) {
-    color:blue;
-} */
-
-
-
-/* pega todos os tipos que são divisiveis por dois */
-/* li:nth-of-type(2n) {
-    color:blue;
-} */
-
-
-
-/* pega todos os tipos que são impares */
-/* li:nth-of-type(odd) {
-    color:blue;
-} */
-
-
-
-/* pega todos os tipos que são pares */
-/* li:nth-of-type(even) {
-    color:blue;
-} */
-
-
-
-/* exemplo de uso */
-
-ul {
+body {
     margin: 0;
     padding: 0;
+    background-color: red;
 }
 
-li {
-    list-style: none;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
+/* primeiro exemplo */
+/* .container {
+    width: 100%;    
+    background-color: blue;
 }
 
-
-li:nth-of-type(odd) {
-    background-color: beige;
+.primeira {
+    display: inline-block;
+    margin-right: -4px;
+    margin-bottom: -4px;
+    width: calc(100% - 300px);
+    height: 300px;
+    background-color: yellow;
 }
 
- li:nth-of-type(even) {
-    background-color: gray;
-    color: #fff;
-}
+.segunda {
+    display: inline-block;
+    margin-right: -4px;
+    margin-bottom: -4px;
+    width: 300px;
+    height: 300px;
+    background-color: green;   
+} */
+
+
+/* segundo exemplo */
+    .primeira {
+        width: calc(100% - 200px);
+        height: 100px;
+        background-color: blue;
+        margin: auto;
+    }
+    

@@ -1,0 +1,178 @@
+/* para selecionar classes: .nome-da-classe */
+/* para selecionar id: #nome-do-id */
+/* para selecionar tag's: h1, p, div */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* o asterisco "*" é um seletor que seleciona todos os elementos */
+/* * {
+    margin: 0;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* para selecionar mais de um elemento basta separar eles com virgula */
+/* p, header, h2 {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* também podemos fazer sem a virgula, mas deixa o resultado diferente: 
+ No exemplo abaixo ele pega todos os parágrafos que estão dentro da div para deixar com fundo verde,
+ então pegamos todos os elementos dentro do segundo critério(p), mas que estão dentro do primeiro(div) */
+/* div p {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* utilizando ">":
+Nesse caso pegamos todos os elementos que tem como pai o primeiro elemento.
+Como no exemplo abaixo os p4 5 e 6 estão dentro de uma section, só irá alterar os p1 2 e 3*/
+/* header > p {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* utilizando "+":
+Nesse caso pegamos somente o segundo elemento citado que está depois do primeiro elemento citado.
+Como no exemplo abaixo os p fora 1*/
+/* header + p {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*utilizando o "~":
+ele pega todos os elementos do segundo elemento citado que está depois do primeiro elemento citado
+Como no exemplo abaixo os p fora 1 2 3 e 4 que sucedam o header*/
+/* header ~ p {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*utilizando o "[]":
+pega todos os elementos com atributo citado
+Como no exemplo abaixo o h1 e h4*/
+/* [width] {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*utilizando o "[=]":
+pega todos os elementos com atributo citado
+Como no exemplo abaixo o h4*/
+/* [width = "500"] {
+    background-color: green;
+} */
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* utilizando o "[~=]":
+ pegando todos os title que tenham a palavra titulo 
+exemplo abaixo o h1 e h3*/
+/* [title ~= "titulo"] {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* utilizando o "[^=]":
+ pegando todos os title que começarem com a letra t (exemplo abaixo).
+exemplo abaixo o h1 h3 e h5*/
+/* [title ^= "t"] {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* utilizando o "[$=]":
+ pegando todos os title que terminem com 1 (exemplo abaixo).
+exemplo abaixo o h1 e h5*/
+/* [title $= "1"] {
+    background-color: green;
+} */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* utilizando o "[*=]":
+ pegando todos os title em qualquer lugar com tu (exemplo abaixo).
+exemplo abaixo o h1 e h3*/
+/* [title *= "tu"] {
+    background-color: green;
+} */

@@ -1,0 +1,88 @@
+/* pseudo classe utliza somente 1x dois pontos ":" */
+
+/* somente o input que estiver com foco (digitando) fica vermelho */
+input:focus {
+    color:red ;
+}
+
+
+
+/* somente o primeiro elemento li de todas as ul ficam azul, ele pega o primeiro child.
+Caso vc colocar qualquer outro elemento em primeiro lugar, como um p ou um h1 o primeiro li não fica mais azul*/
+/* li:first-child {
+    color:blue;
+} */
+
+
+
+/* primeiro do seu tipo, independente de tiver outro tipo antes */
+/* li:first-of-type {
+    color:blue;
+} */
+
+
+
+/* seleciona qual child */
+/* li:nth-child(2) {
+    color:blue;
+} */
+
+
+
+/* seleciona qual tipo */
+/* li:nth-of-type(2) {
+    color:blue;
+} */
+
+
+
+/* seleciona o child de trás para frente */
+/* li:nth-last-child(2) {
+    color:blue;
+} */
+
+
+
+/* pega todos os tipos que são divisiveis por dois */
+/* li:nth-of-type(2n) {
+    color:blue;
+} */
+
+
+
+/* pega todos os tipos que são impares */
+/* li:nth-of-type(odd) {
+    color:blue;
+} */
+
+
+
+/* pega todos os tipos que são pares */
+/* li:nth-of-type(even) {
+    color:blue;
+} */
+
+
+
+/* exemplo de uso */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+
+li:nth-of-type(odd) {
+    background-color: beige;
+}
+
+ li:nth-of-type(even) {
+    background-color: gray;
+    color: #fff;
+}

@@ -1,0 +1,47 @@
+
+.container {
+    color: #fff;
+    padding: 10px;
+    background-color: gray;
+    /* primeiro precisamos definir o display como grid */
+    display: grid;
+
+
+    /* após definir o display precisamos definir as linhas e colunas*/
+    /* cada "auto" é uma linha, então criamos um grid com 2 linhas e 3 colunas que se adaptam na tela */
+    /* grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto; */
+
+    /* caso queira que alguma coluna ou linha fique em determinado tamanho faça: */
+    /* para sistemas responsivos recomendado usar "%", mas caso queira que o valor fique fixo utilizar "px" por exemplo, com valores fixos (px) caso o elemento chegue no limite ele vaza do (neste caso) container */
+    /* grid-template-rows: auto auto;
+    grid-template-columns: 10% 150px auto; */
+
+    /* além dessas duas maneiras também existe o sistema de medidas que é exclusivo do grid: fr (fração) */
+    /* grid-template-rows: 200px 100px;
+    grid-template-columns: 1fr 3fr 1fr; */
+
+    /* podemos juntar o rows e o columns em um só: */
+    /* linhas / colunas */
+    /* grid-template: 200px 100px / 1fr 3fr 1fr; */
+
+    /* podemos mudar a estrutura */
+    grid-template: auto auto auto / auto auto;
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    background-color: green;
+}
+
+.rect {
+    /* width: 100px;
+    height: 100px; */
+}

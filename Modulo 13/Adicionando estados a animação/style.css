@@ -1,0 +1,19 @@
+
+@keyframes changeColor {
+    from {background-color: red;}
+    to {background-color: blue;}    
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-style: solid;  
+    animation-name: changeColor;  
+    animation-duration: 3s;
+}
+
+/* precisamos de 3 coisas para animação: 
+1ª criar a animação;
+2ª dizer qual propriedade eu quero modificar;
+3ª falar quanto tempo vai durar para levar a propriedade do estado A para o B  */

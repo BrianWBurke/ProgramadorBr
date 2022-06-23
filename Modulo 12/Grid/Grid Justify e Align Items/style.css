@@ -1,5 +1,6 @@
 
 .container {
+    height: 500px;
     color: #fff;
     padding: 10px;
     background-color: gray;
@@ -8,12 +9,13 @@
     
     grid-template: auto auto / auto auto auto;
 
-    /* gap serve para mostrar quando termina e começa a coluna ou a linha */
- /* grid-row-gap: 10px;
-    grid-column-gap: 30px; */
+    /* para alinhar os itens */
+    justify-items: center;
+    align-items: center;
 
-    /* caso os dois valores sejam iguais podemos simplesmente utilizar: */
     grid-gap: 10px
+
+   
 }
 
 .r1 {
@@ -29,6 +31,6 @@
 }
 
 .rect {
-    /* width: 100px;
-    height: 100px; */
+    width: 100px;
+    height: 100px;
 }

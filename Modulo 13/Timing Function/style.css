@@ -1,0 +1,55 @@
+
+/* @keyframes changeColor {
+    0% {background-color: red; width: 200px; height: 200px;}
+    25%  {background-color: green;}
+    50%  {background-color: yellow; width: 400px; height: 400px;}
+    75%  {background-color: violet;}
+    100% {background-color: blue; width: 200px; height: 200px;}    
+} */
+
+/* podemos usar o exemplo de baixo ou o de cima, lembrando sempre de alterar o animation-name caso for mudar o exemplo */
+@keyframes move {
+    0% {left: 0px;}
+    100% {left: 300px;}
+}
+
+
+.box {
+    /* para funcionar precisa de position como relative */
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+    border-style: solid;  
+    animation-name: move;  
+    animation-duration: 3s;   
+    animation-fill-mode: forwards;
+}
+
+.div1 {
+    /* mesma velocidade do inicio ao fim */
+    animation-timing-function: linear;
+}
+
+.div2 {
+    /* devagar / muito rapido / devagar */
+    animation-timing-function: ease;
+}
+
+.div3 {
+    /* muito devagar / devagar */
+    animation-timing-function: ease-in;
+}
+
+.div4 {
+    /* rápido / devagar */
+    animation-timing-function: ease-out;
+}
+
+.div5 {
+    /* devagar */
+    animation-timing-function: ease-in-out;
+}
+
+
+

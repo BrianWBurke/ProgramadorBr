@@ -1,0 +1,34 @@
+
+@keyframes changeColor {
+    0% {background-color: red; width: 200px; height: 200px;}
+    25%  {background-color: green;}
+    50%  {background-color: yellow; width: 400px; height: 400px;}
+    75%  {background-color: violet;}
+    100% {background-color: blue; width: 200px; height: 200px;}    
+}
+
+
+/* com essa propriedade podemos falar ao css por onde ele irá começar, como por exemplo ir dos 100% ao 0% (reverse)  */
+.box {
+    width: 200px;
+    height: 200px;
+    border-style: solid;  
+    animation-name: changeColor;  
+    animation-duration: 3s;   
+    
+    
+    animation-direction: reverse;   
+    
+    /* quando animação termina ela fica no ultimo frame */
+    /* animation-fill-mode: forwards; */
+
+    /* essa opção só funciona com delay, ela faz com que o primeiro frame da animação fique na tela no começo */
+    /* animation-fill-mode: forwards;
+    animation-delay: 2s; */
+
+    /* para ter os dois juntos: */
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+

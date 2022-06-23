@@ -1,0 +1,26 @@
+
+.btn {
+    display: inline-block;
+    padding: 20px;
+    background: #428bca;
+    color: #fff;
+    font-size: 30px;
+
+    /* transition-property: background-color, padding;
+    transition-duration: 500ms, 1s;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out; */
+
+    /* short hand */
+    transition: background-color 500ms 1s ease-out, padding 3s;
+
+
+}
+
+
+
+.btn:hover {
+    background-color: #2248ca;
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -23,8 +23,13 @@ function listarUsuarios() {
     console.log(usuarios);
 }
 
-function executar() {
-    inserirUsuarios('Brian');
+
+// primeiro criamos uma function declarando ela como async
+// depois colocamos o await para que ela "espere" a promise ser resolvida
+async function executar() {
+    await inserirUsuarios('Brian');
     listarUsuarios();
 }
+
+executar();
 

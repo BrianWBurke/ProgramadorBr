@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
 
     let squares = document.querySelectorAll('.square');
@@ -16,14 +17,15 @@ function handleClick(event) {
     if (handleMove(position)) {        
 
         setTimeout(()=> {
-            alert('O jogo acabou - Vencedor: ' + playerTime);
+            if (playerTime == 0) {
+            alert('O jogo acabou - Vencedor: O');
+        } else {
+            alert('O jogo acabou - Vencedor: X');
+        }
         }, 10);        
     }   
 
-    updateSquare(position);
-    // updateSquares();
-
-
+    updateSquare(position);  
 }
 
 function newGame() {
@@ -31,29 +33,31 @@ function newGame() {
     playerTime = 0;    
     gameOver = false;
 
-    updateSquares();
+    location.reload();       
 }
 
-//segundo jeito
 function updateSquare(position) {
     let square = document.getElementById(position.toString());
     let symbol = board[position];
-    square.innerHTML = `<div class='${symbol}'></div>`
+    square.classList.add(symbol);
+    // square.innerHTML = `<div class='${symbol}'></div> `
 }
 
 
-// primeiro jeito:
-function updateSquares() {
+// function resetSquares() {
 
-    let squares = document.querySelectorAll('.square');
+//     let squares = document.querySelectorAll('.square');
+    
 
-    squares.forEach((square) => {
-        let position = square.id;
-        let symbol = board[position];
+//     squares.forEach((square) => {
+//         let position = square.id;
+//         let symbol = board[position];
 
-        if (symbol != '') {
-            square.innerHTML = `<div class='1'></div>`
-        }
+//         if (symbol != '') {
+//             let att = document.getElementsByClassName('square');
+//             att.classList.remove('x');
+//             att.classList.remove('o');
+//         }
 
-    })
-}
+//     })
+// }

@@ -13,7 +13,7 @@ let winStates = [
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6]
-]
+];
 
 
 function handleMove(position) {
@@ -28,17 +28,7 @@ function handleMove(position) {
         gameOver = isWin();
 
         if (gameOver == false) {
-
-            //duas formas
-            //primeira:
-            playerTime = (playerTime == 0) ? 1 : 0;
-
-            //segunda:
-            // if (playerTime == 0) {
-            //     playerTime = 1;
-            // } else {
-            //     playerTime = 0;
-            // }
+            playerTime = (playerTime == 0) ? 1 : 0;            
         }
     }
 

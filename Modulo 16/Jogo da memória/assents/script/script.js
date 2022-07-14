@@ -17,7 +17,7 @@ let techs = ['bootstrap',
     startGame();
 
     function startGame() {
-        cards = creadCardsFromTechs(techs);
+        cards = createCardsFromTechs(techs);
         shuffleCards(cards);
         console.log(cards);
     }
@@ -30,13 +30,12 @@ let techs = ['bootstrap',
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex--;
 
-            [cards[randomIndex], cards[currentIndex] = cards[currentIndex], cards[randomIndex]];
+            [cards[randomIndex], cards[currentIndex]] = [cards[currentIndex], cards[randomIndex]];
         }
     }
 
-    creadCardsFromTechs(techs);
 
-    function creadCardsFromTechs(techs) {
+    function createCardsFromTechs(techs) {
         let cards = [];
 
         for(let tech of techs) {

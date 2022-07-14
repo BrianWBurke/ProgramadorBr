@@ -13,10 +13,8 @@ body {
     background-color: #c7cdd3;
 }
 
-#b1111 img {
+img {
     width: 70px;
-    background-color: #fff;
-    border-radius: 16px;
 }
 
 .card {
